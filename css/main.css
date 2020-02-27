@@ -29,7 +29,7 @@ header #head1080 {
 }
 
 header #headLogo {
-    width: 325px;
+    width: 275px;
     font-family: Raleway, serif;
     font-size: 35px;
     letter-spacing: 2px;
@@ -54,7 +54,7 @@ header #headMenu {
     height: 70px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 header a{
@@ -119,12 +119,18 @@ body #pageOneText p {
 
 body #pageOneImg {
     margin-top: -10%;
+    margin-left: 2%;
     height: 500px;
     width: 600px;
     background-image: url("../img/phone.png");
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: center;
+    transition: all 0.25s ease-in-out;
+}
+
+body #pageOneImg:hover {
+    transform: scale(1.2);
 }
 
 body #emailButton {
@@ -142,25 +148,39 @@ body #emailButton input {
     font-family: "Montserrat", serif;
     font-size: 20px;
     padding: 5px;
+    padding-left: 15px;
+}
+
+body #emailButton input:focus {
+    outline: none;
 }
 
 body #emailButton button {
-    width: 100px;
+    width: 120px;
     height: 50px;
     border: none;
     padding: 0;
     border-radius: 0 10px 10px 0;
     background-color: #fff;
-    border-left: 2px solid #27a4b5;
     outline: none;
+    transition: all 0.25s ease-in-out;
 }
 
 
 body #emailButton button span {
-    background: linear-gradient(45deg, rgba(0,189,165,1) 0%, rgba(106,120,209,1) 100%);
+    background: #2D9FB7;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: "Montserrat", serif;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 900;
+    transition: all 0.25s ease-in-out;
 }
+
+body #emailButton button:hover {
+    transform: translateX(5px);
+    cursor: pointer;
+}
+
+
+
